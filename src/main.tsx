@@ -1,10 +1,17 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import "./index.css";
+import "./lib/i18n/i18n"; // <- existe: src/lib/i18n/i18n.ts
+import App from "./App";
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+ReactDOM.createRoot(document.getElementById("root")!).render(
+  <React.StrictMode>
+    <BrowserRouter basename="/ranky-web">
+      <Routes>
+        <Route path="/:lng/*" element={<App />} />
+        <Route path="*" element={<Navigate to="/es" replace />} />
+      </Routes>
+    </BrowserRouter>
+  </React.StrictMode>,
+);

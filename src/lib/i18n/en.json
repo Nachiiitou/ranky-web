@@ -1,0 +1,26 @@
+{
+  "navbar": {
+    "brandAlt": "Ranky logo",
+    " ctaPrimary": "Add to Discord   ",
+    "toggleLabel": "Toggle language"
+  },
+    "hero": {
+    "title": "Create custom LoL rankings<0/>to compete in SoloQ/DuoQ",
+    "subtitle": "Run SoloQChallenge-style events in your server and track progress with a real-time leaderboard.",
+    "ctaPrimary": "Add to Discord",
+    "badge1": "SoloQ / DuoQ",
+    "badge2": "Live leaderboard",
+    "badge3": "2 min setup"
+  },
+  "footer": {
+    "brandAlt": "Ranky logo",
+    "tagline": "Create custom LoL rankings for SoloQ/DuoQ with a live leaderboard.",
+    "ctaPrimary": "Add to Discord",
+    "product": { "title": "Product", "how": "How it works", "features": "Features", "usage": "How to use", "faq": "FAQ" },
+    "community": { "title": "Community", "credits": "Credits" },
+    "legal": { "title": "Legal", "privacy": "Privacy", "terms": "Terms", "contact": "Contact" },
+    "rights": "All rights reserved.",
+    "madeBy": "This site was developed with <heart/> by <a>Zennith</a>",
+    "riotNotice": "Ranky was created under Riot Games' “<a>Legal Jibber Jabber</a>” policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this project."
+  }
+}

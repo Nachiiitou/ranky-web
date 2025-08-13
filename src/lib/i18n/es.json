@@ -1,0 +1,28 @@
+{
+  "navbar": {
+    "brandAlt": "Logo de Ranky",
+    "ctaPrimary": "Añadir a Discord",
+    "toggleLabel": "Cambiar idioma"
+  },
+"hero": {
+    "title": "Crea rankings personalizados de LoL<0/>para competir en SoloQ/DuoQ",
+    "subtitle": "Organiza retos al estilo SoloQChallenge de ElmiilloR en tu servidor y sigue el progreso con un leaderboard en tiempo real.",
+    "ctaPrimary": "Añadir a Discord",
+    "badge1": "SoloQ / DuoQ",
+    "badge2": "Leaderboard en vivo",
+    "badge3": "Setup en 2 min"
+  },
+    "footer": {
+    "brandAlt": "Logo de Ranky",
+    "tagline": "Crea rankings personalizados de LoL para competir en SoloQ/DuoQ con leaderboard en vivo.",
+    "ctaPrimary": "Añadir a Discord",
+    "product": { "title": "Producto", "how": "Cómo funciona", "features": "Características", "usage": "Cómo usarlo", "faq": "FAQ" },
+    "community": { "title": "Comunidad", "credits": "Créditos" },
+    "legal": { "title": "Legal", "privacy": "Privacidad", "terms": "Términos", "contact": "Contacto" },
+    "rights": "Todos los derechos reservados.",
+    "madeBy": "Este sitio fue desarrollado con <heart/> por <a>Zennith</a>",
+    "riotNotice": "Ranky fue creado bajo la política de «<a>Legal Jibber Jabber</a>» de Riot Games utilizando recursos propiedad de Riot Games. Riot Games no respalda ni patrocina este proyecto."
+  }
+
+  
+}
