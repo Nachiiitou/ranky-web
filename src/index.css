@@ -1,7 +1,92 @@
 @import "tailwindcss";
 
+/* ===== Base ===== */
 html,
 body {
   overflow-x: hidden;
   background-color: black;
+}
+
+/* Small helpers used by components */
+.bg-gradient-radial { background: radial-gradient(circle, var(--tw-gradient-stops)); }
+.text-shadow-lg     { text-shadow: 0 4px 8px rgba(0,0,0,0.3); }
+
+/* ========================================================================== */
+/*                               KEYFRAMES                                    */
+/* ========================================================================== */
+
+/* Generic, GPU-friendly */
+@keyframes bg-pan {
+  0%,100% { background-position: 0% 50%; }
+  50%     { background-position: 100% 50%; }
+}
+@keyframes float-y {
+  0%,100% { transform: translateY(0) }
+  50%     { transform: translateY(-10px) }
+}
+@keyframes float-y-reverse {
+  0%,100% { transform: translateY(0) }
+  50%     { transform: translateY(10px) }
+}
+@keyframes orbit-rotate { to { transform: rotate(360deg) } }
+@keyframes twinkle-sway {
+  0%,100% { opacity:.3; transform: translateY(-20px) scale(.8) }
+  50%     { opacity:.8; transform: translateY(20px)  scale(1.2) }
+}
+@keyframes wave {
+  0%   { transform: translateX(-100%) skewX(-15deg); }
+  100% { transform: translateX(100%)  skewX(-15deg); }
+}
+
+/* Legacy names (por compatibilidad con tu Hero anterior) */
+@keyframes grid-pulse        { 0%,100%{opacity:.3} 50%{opacity:.6} }
+@keyframes epic-float        { 0%,100%{transform:translate(0,0) scale(1)} 50%{transform:translate(-12px,-24px) scale(1.06)} }
+@keyframes epic-float-rev    { 0%,100%{transform:translate(0,0) scale(1)} 50%{transform:translate(18px,-18px)  scale(.94)} }
+@keyframes epic-orbit        { to { transform: rotate(360deg); } }
+@keyframes twinkle-epic      { 0%,100%{opacity:.2} 50%{opacity:.6} }
+@keyframes energy-wave       { 0%{transform:translateX(-100%) skewX(-15deg)} 100%{transform:translateX(100%) skewX(-15deg)} }
+@keyframes pulse-gentle      { 0%,100%{opacity:.9;transform:scale(1)} 50%{opacity:.95;transform:scale(1.01)} }
+
+/* ========================================================================== */
+/*                             ANIMATION UTILITIES                             */
+/* ========================================================================== */
+
+/* Nuevas utilidades recomendadas */
+.animate-bg-pan        { animation: bg-pan 5s linear infinite; background-size: 200% 200%; }
+.animate-float         { animation: float-y 18s ease-in-out infinite; will-change: transform; }
+.animate-float-reverse { animation: float-y-reverse 22s ease-in-out infinite; will-change: transform; }
+.animate-orbit         { animation: orbit-rotate 24s linear infinite; transform-origin: center; will-change: transform; }
+.animate-twinkle-sway  { animation: twinkle-sway var(--twink-dur,4s) ease-in-out infinite; will-change: transform, opacity; }
+.animate-wave          { animation: wave 8s linear infinite; will-change: transform; }
+
+/* Clases compatibles con tu código previo */
+.animate-grid-pulse         { animation: grid-pulse 4s ease-in-out infinite; }
+.animate-epic-float         { animation: epic-float 20s ease-in-out infinite; }
+.animate-epic-float-reverse { animation: epic-float-rev 26s ease-in-out infinite; }
+.animate-epic-orbit         { animation: epic-orbit 24s linear infinite; transform-origin:center; }
+.animate-twinkle-epic       { animation: twinkle-epic 6s ease-in-out infinite; }
+.animate-energy-wave        { animation: energy-wave 8s linear infinite; }
+.animate-pulse-gentle       { animation: pulse-gentle 5s ease-in-out infinite; }
+
+/* ========================================================================== */
+/*                         ACCESSIBILITY / PERFORMANCE                         */
+/* ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-bg-pan,
+  .animate-float,
+  .animate-float-reverse,
+  .animate-orbit,
+  .animate-twinkle-sway,
+  .animate-wave,
+  .animate-grid-pulse,
+  .animate-epic-float,
+  .animate-epic-float-reverse,
+  .animate-epic-orbit,
+  .animate-twinkle-epic,
+  .animate-energy-wave,
+  .animate-pulse-gentle {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }

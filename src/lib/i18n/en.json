@@ -5,16 +5,15 @@
     "toggleLabel": "Toggle language"
   },
     "hero": {
-    "title": "Create custom LoL rankings<0/>to compete in SoloQ/DuoQ",
-    "subtitle": "Run SoloQChallenge-style events in your server and track progress with a real-time leaderboard.",
+    "title": "Create custom tournaments<0/>to compete with your friends in SoloQ/DuoQ.",
     "ctaPrimary": "Add to Discord",
     "badge1": "SoloQ / DuoQ",
     "badge2": "Live leaderboard",
-    "badge3": "2 min setup"
+    "badge3": "Tournament"
   },
   "footer": {
     "brandAlt": "Ranky logo",
-    "tagline": "Create custom LoL rankings for SoloQ/DuoQ with a live leaderboard.",
+    "tagline": "Create custom tournaments to compete with your friends in SoloQ/DuoQ.",
     "ctaPrimary": "Add to Discord",
     "product": { "title": "Product", "how": "How it works", "features": "Features", "usage": "How to use", "faq": "FAQ" },
     "community": { "title": "Community", "credits": "Credits" },
@@ -22,5 +21,65 @@
     "rights": "All rights reserved.",
     "madeBy": "This site was developed with <heart/> by <a>Zennith</a>",
     "riotNotice": "Ranky was created under Riot Games' “<a>Legal Jibber Jabber</a>” policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this project."
+  },
+  
+  "howItWorks": {
+
+    "title": {
+      "part1": "How it Works"
+     
+    },
+   
+    "steps": {
+      "step1": {
+        "title": "Invite the bot",
+        "description": "Invite your friends, connect their summoners, and agree on the rules. The bot organizes, you play.",
+        "cta": "Add to Discord"
+      },
+      "step2": {
+        "title": "Setup your ladder",
+        "description": "Connect summoners and define rules: SoloQ/DuoQ, points per win/streak, promos and penalties.",
+        "features": ["SoloQ/DuoQ", "Tournament", "Rankeds"]
+      },
+      "step3": {
+        "title": "Let's play",
+        "description": "The leaderboard updates with your LP and resets weekly. Change rules whenever you want.",
+        "features": ["LP sync", "League Of Legends", "Personalizable"]
+      }
+    },
+    "ctaMain": "Add to Discord",
+    "faq": {
+      "title": "Quick questions",
+      "items": [
+        {
+          "q": "How long does setup take?", 
+          "a": "Less than 2 minutes. Just invite the bot and link your Riot Games account."
+        },
+        {
+          "q": "Does it update automatically?", 
+          "a": "Yes. The bot synchronizes LP periodically and automatically reflects changes in the leaderboard."
+        },
+        {
+          "q": "How are points calculated?", 
+          "a": "Points are calculated based on the LP you earn from your ranked games."
+        },
+        {
+          "q": "What game modes does it support?", 
+          "a": "SoloQ and DuoQ. Perfect for individual or duo competition."
+        },
+        {
+          "q": "What permissions does the bot request?", 
+          "a": "SoloQ and DuoQ. We will soon expand to more."
+        },
+        {"q": "¿Is it safe?", "a": "Of course! It's an open source project, so if you have any questions, we invite you to check out the code on GitHub ;)"}
+
+      ]
+    },
+    "finalCta": {
+      "title": "Ready to create your ranking?",
+      "subtitle": "Invite the bot and start competing on your server with your friends.",
+      "buttonText": "Add to Discord"
+    }
   }
+
 }

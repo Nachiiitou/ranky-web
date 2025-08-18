@@ -5,12 +5,11 @@
     "toggleLabel": "Cambiar idioma"
   },
 "hero": {
-    "title": "Crea rankings personalizados de LoL<0/>para competir en SoloQ/DuoQ",
-    "subtitle": "Organiza retos al estilo SoloQChallenge de ElmiilloR en tu servidor y sigue el progreso con un leaderboard en tiempo real.",
+    "title": "Crea torneos personalizados<0/>para competir con tus amigos en SoloQ/DuoQ",
     "ctaPrimary": "Añadir a Discord",
     "badge1": "SoloQ / DuoQ",
     "badge2": "Leaderboard en vivo",
-    "badge3": "Setup en 2 min"
+    "badge3": "Torneos"
   },
     "footer": {
     "brandAlt": "Logo de Ranky",
@@ -22,7 +21,56 @@
     "rights": "Todos los derechos reservados.",
     "madeBy": "Este sitio fue desarrollado con <heart/> por <a>Zennith</a>",
     "riotNotice": "Ranky fue creado bajo la política de «<a>Legal Jibber Jabber</a>» de Riot Games utilizando recursos propiedad de Riot Games. Riot Games no respalda ni patrocina este proyecto."
+    },
+    
+  
+  
+  "howItWorks": {
+    "title": {
+      "part1": "Como funciona"
+    
+    },
+  
+    "steps": {
+      "step1": {
+        "title": "Invita el bot",
+        "description": "Pulsa \"Añadir a Discord\" y elige dónde publicar el leaderboard.",
+        "cta": "Añadir a Discord"
+      },
+      "step2": {
+        "title": "Configuralo",
+        "description": "Invita a tus amigos, conecta sus invocadores y acuerden las normas. El bot organiza, tú juegas.",
+        "features": ["SoloQ/DuoQ", "Torneo", "Rankeds"]
+      },
+      "step3": {
+        "title": "A jugar",
+        "description": "El leaderboard se actualiza con tus LP. ¡Empieza cuando quieras!",
+        "features": ["LP sync", "League Of Legends", "Personalizable"]
+      }
+    },
+    "ctaMain": "Añadir a Discord",
+    "faq": {
+      "title": "Preguntas rápidas",
+      "items": [
+        {"q": "¿Cuánto tarda el setup?", "a": "Menos de 2 minutos. Solo invitas el bot y vinculas tu cuenta de Riot Games."},
+        {"q": "¿Se actualiza solo?", "a": "Sí. El bot sincroniza LP periódicamente y refleja cambios en el leaderboard automáticamente."},
+        {"q": "¿Cómo se calculan los puntos?", "a": "Los puntos se calculan en base a tus LP ganados por tus partidas en Rankeds."},
+        {"q": "¿Qué modos soporta?", "a": "SoloQ and DuoQ. We will soon expand to more."},
+        {"q": "¿Qué permisos pide el bot?", "a": "Solo los necesarios para usar comandos y publicar/editar el leaderboard. Se muestran al invitarlo."},
+         {"q": "¿Es seguro?", "a": "¡Claro!, es un proyecto de código abierto, así que ante cualquier duda te invitamos a revisar el código en Github ;)"}
+      ]
+    },
+    "finalCta": {
+      "title": "¿Listo para crear tu propio torneo?",
+      "subtitle": "Invita el bot y empieza a competir en tu servidor con tus amigos.",
+      "buttonText": "Añadir a Discord"
+    }
   }
+  }
+  
 
   
-}
+
+  
+  
+

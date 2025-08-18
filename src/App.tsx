@@ -12,6 +12,7 @@ import { useTranslation } from "react-i18next";
 import Navbar from "./app/pages/components/Navbar";
 import Footer from "./app/pages/components/Footer";
 import Hero from "./app/pages/components/Hero";
+import HowItWorksFAQ from "./app/pages/components/HowItWorksFAQ";
 
 export default function App() {
   const { i18n } = useTranslation();
@@ -38,6 +39,7 @@ export default function App() {
       <Navbar />
 
       <Hero />
+      <HowItWorksFAQ />
       <Routes>
         {/* /:lng */}
 
@@ -48,7 +50,6 @@ export default function App() {
         {/* fallback dentro de :lng */}
         <Route path="*" element={<Navigate to="." replace />} />
       </Routes>
-
       <Footer />
     </div>
   );

@@ -1,15 +1,13 @@
-/* eslint react-refresh/only-export-components: ["warn", { "allowExportNames": ["useI18n"] }] */
-
 import { createContext, useContext, useMemo, useState, useEffect } from "react";
 import type { I18n, Locale, Messages } from "./types";
 import { DEFAULT_LOCALE, STORAGE_KEY } from "./config";
 import es from "./es.json";
 import en from "./en.json";
 
-// fuerza el tipo por si el JSON se infiere como {}
+
 const dicts = { es, en } as Record<Locale, Messages>;
 
-// acceso profundo "a.b.c" (sin any)
+
 function getDeep(obj: Messages, path: string): string | Messages | undefined {
   const result = path.split(".").reduce<unknown>((acc, k) => {
     if (acc && typeof acc === "object" && k in (acc as Record<string, unknown>)) {
@@ -20,7 +18,7 @@ function getDeep(obj: Messages, path: string): string | Messages | undefined {
   return (typeof result === "string" || typeof result === "object") ? (result as string | Messages) : undefined;
 }
 
-// interpolación "Hola, {name}"
+
 function interpolate(str: string, params?: Record<string, string | number>) {
   if (!params) return str;
   return str.replace(/\{(\w+)\}/g, (_, k) =>
